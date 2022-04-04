@@ -1,326 +1,44 @@
 Config = {}
 
 Config.VendingObjects = {
-    "prop_vend_soda_01",
-    "prop_vend_soda_02",
-    "prop_vend_water_01"
+   --"prop_vend_soda_01",
+   --"prop_vend_soda_02",
+   --"prop_vend_water_01"
 }
 
 Config.BinObjects = {
-    "prop_bin_05a",
+    --"prop_bin_05a",
 }
 
 Config.CraftingObject = `prop_toolchest_05` -- Only needed if not using target | Line 928 to change Target Models
 
 Config.VendingItem = {
-    [1] = {
-        name = "kurkakola",
-        price = 4,
-        amount = 50,
-        info = {},
-        type = "item",
-        slot = 1,
-    },
-    [2] = {
-        name = "water_bottle",
-        price = 4,
-        amount = 50,
-        info = {},
-        type = "item",
-        slot = 2,
-    },
+    -- [1] = {
+    --     name = "kurkakola",
+    --     price = 4,
+    --     amount = 50,
+    --     info = {},
+    --     type = "item",
+    --     slot = 1,
+    -- },
+    -- [2] = {
+    --     name = "water_bottle",
+    --     price = 4,
+    --     amount = 50,
+    --     info = {},
+    --     type = "item",
+    --     slot = 2,
+    -- },
 }
 
 Config.CraftingItems = {
-    [1] = {
-        name = "lockpick",
-        amount = 50,
-        info = {},
-        costs = {
-            ["metalscrap"] = 22,
-            ["plastic"] = 32,
-        },
-        type = "item",
-        slot = 1,
-        threshold = 0,
-        points = 1,
-    },
-    [2] = {
-        name = "screwdriverset",
-        amount = 50,
-        info = {},
-        costs = {
-            ["metalscrap"] = 30,
-            ["plastic"] = 42,
-        },
-        type = "item",
-        slot = 2,
-        threshold = 0,
-        points = 2,
-    },
-    [3] = {
-        name = "electronickit",
-        amount = 50,
-        info = {},
-        costs = {
-            ["metalscrap"] = 30,
-            ["plastic"] = 45,
-            ["aluminum"] = 28,
-        },
-        type = "item",
-        slot = 3,
-        threshold = 0,
-        points = 3,
-    },
-    [4] = {
-        name = "radioscanner",
-        amount = 50,
-        info = {},
-        costs = {
-            ["electronickit"] = 2,
-            ["plastic"] = 52,
-            ["steel"] = 40,
-        },
-        type = "item",
-        slot = 4,
-        threshold = 0,
-        points = 4,
-    },
-    [5] = {
-        name = "gatecrack",
-        amount = 50,
-        info = {},
-        costs = {
-            ["metalscrap"] = 10,
-            ["plastic"] = 50,
-            ["aluminum"] = 30,
-            ["iron"] = 17,
-            ["electronickit"] = 2,
-        },
-        type = "item",
-        slot = 5,
-        threshold = 110,
-        points = 5,
-    },
-    [6] = {
-        name = "handcuffs",
-        amount = 50,
-        info = {},
-        costs = {
-            ["metalscrap"] = 36,
-            ["steel"] = 24,
-            ["aluminum"] = 28,
-        },
-        type = "item",
-        slot = 6,
-        threshold = 160,
-        points = 6,
-    },
-    [7] = {
-        name = "repairkit",
-        amount = 50,
-        info = {},
-        costs = {
-            ["metalscrap"] = 32,
-            ["steel"] = 43,
-            ["plastic"] = 61,
-        },
-        type = "item",
-        slot = 7,
-        threshold = 200,
-        points = 7,
-    },
-    [8] = {
-        name = "pistol_ammo",
-        amount = 50,
-        info = {},
-        costs = {
-            ["metalscrap"] = 50,
-            ["steel"] = 37,
-            ["copper"] = 26,
-        },
-        type = "item",
-        slot = 8,
-        threshold = 250,
-        points = 8,
-    },
-    [9] = {
-        name = "ironoxide",
-        amount = 50,
-        info = {},
-        costs = {
-            ["iron"] = 60,
-            ["glass"] = 30,
-        },
-        type = "item",
-        slot = 9,
-        threshold = 300,
-        points = 9,
-    },
-    [10] = {
-        name = "aluminumoxide",
-        amount = 50,
-        info = {},
-        costs = {
-            ["aluminum"] = 60,
-            ["glass"] = 30,
-        },
-        type = "item",
-        slot = 10,
-        threshold = 300,
-        points = 10,
-    },
-    [11] = {
-        name = "armor",
-        amount = 50,
-        info = {},
-        costs = {
-            ["iron"] = 33,
-            ["steel"] = 44,
-            ["plastic"] = 55,
-            ["aluminum"] = 22,
-        },
-        type = "item",
-        slot = 11,
-        threshold = 350,
-        points = 11,
-    },
-    [12] = {
-        name = "drill",
-        amount = 50,
-        info = {},
-        costs = {
-            ["iron"] = 50,
-            ["steel"] = 50,
-            ["screwdriverset"] = 3,
-            ["advancedlockpick"] = 2,
-        },
-        type = "item",
-        slot = 12,
-        threshold = 1750,
-        points = 12,
-    },
+
 }
 
 Config.AttachmentCraftingLocation = vector3(88.91, 3743.88, 40.77) -- Only needed if not using target
 
 Config.AttachmentCrafting = {
-    ["items"] = {
-        [1] = {
-            name = "pistol_extendedclip",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 140,
-                ["steel"] = 250,
-                ["rubber"] = 60,
-            },
-            type = "item",
-            slot = 1,
-            threshold = 0,
-            points = 1,
-        },
-        [2] = {
-            name = "pistol_suppressor",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 165,
-                ["steel"] = 285,
-                ["rubber"] = 75,
-            },
-            type = "item",
-            slot = 2,
-            threshold = 10,
-            points = 2,
-        },
-        [3] = {
-            name = "smg_extendedclip",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 190,
-                ["steel"] = 305,
-                ["rubber"] = 85,
-            },
-            type = "item",
-            slot = 3,
-            threshold = 25,
-            points = 3,
-        },
-        [4] = {
-            name = "microsmg_extendedclip",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 205,
-                ["steel"] = 340,
-                ["rubber"] = 110,
-            },
-            type = "item",
-            slot = 4,
-            threshold = 50,
-            points = 4,
-        },
-        [5] = {
-            name = "smg_drum",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 230,
-                ["steel"] = 365,
-                ["rubber"] = 130,
-            },
-            type = "item",
-            slot = 5,
-            threshold = 75,
-            points = 5,
-        },
-        [6] = {
-            name = "smg_scope",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 255,
-                ["steel"] = 390,
-                ["rubber"] = 145,
-            },
-            type = "item",
-            slot = 6,
-            threshold = 100,
-            points = 6,
-        },
-        [7] = {
-            name = "assaultrifle_extendedclip",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 270,
-                ["steel"] = 435,
-                ["rubber"] = 155,
-                ["smg_extendedclip"] = 1,
-            },
-            type = "item",
-            slot = 7,
-            threshold = 150,
-            points = 7,
-        },
-        [8] = {
-            name = "assaultrifle_drum",
-            amount = 50,
-            info = {},
-            costs = {
-                ["metalscrap"] = 300,
-                ["steel"] = 469,
-                ["rubber"] = 170,
-                ["smg_extendedclip"] = 2,
-            },
-            type = "item",
-            slot = 8,
-            threshold = 200,
-            points = 8,
-        },
-    }
+
 }
 
 MaxInventorySlots = 41
@@ -371,4 +89,31 @@ Config.MaximumAmmoValues = {
     ["smg"] = 250,
     ["shotgun"] = 200,
     ["rifle"] = 250,
+}
+
+Config.Vehicles = {
+    --LKW So kannst man Kommentare setzen......
+    
+    [83136452] = {     	 ["maxweight"] = 55000,      ["slots"] = 20, }, 	--Rebla
+    [3244501995] = {  	 ["maxweight"] = 200000,     ["slots"] = 100, },	--Mule2
+    [1426711170] = {   	 ["maxweight"] = 140000,     ["slots"] = 40, }, 	--Speedoexpress
+	[972671128] = {      ["maxweight"] = 35000,      ["slots"] = 20, },		--Tampa
+	[2436313176] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--ZR350
+	[3101054893] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Calico	
+	[2712905841] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Jester4
+	[3842363289] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--RT3000
+	[2568944644] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Comet6
+	[2175389151] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Faction
+	[2933279331] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Chino2
+	[3612755468] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Buccaneer
+	[872704284] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Sultan2
+	[1377217886] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Remus
+	[2370166601] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Impaler
+	[1742022738] = {   	 ["maxweight"] = 45000,      ["slots"] = 20, }, 	--Slamvan
+	[2196012677] = {   	 ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Club
+	[2016857647] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Futo
+	[1104234922] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Sentinel3
+	[310284501] = {   	 ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Dynasty
+	[1645267888] = {   	 ["maxweight"] = 60000,      ["slots"] = 20, }, 	--RancherXL	
+	
 }
