@@ -50,15 +50,26 @@
             </div>
                 <div class="inv-options">
                     <div class="inv-options-list">
+<<<<<<< Updated upstream
                         <img class="brand-logo" src="./images/logo.png"></img>
+=======
+                        <img class="brand-logo" src="./images/lj-symbol.svg"></img>
+>>>>>>> Stashed changes
                         <input type="number" id="item-amount" class="inv-option-item" min=1 max="10000" placeholder="Amount" pattern="[0-9]" onfocus="this.value=''" placeholder="" oninput="validity.valid||(value='');"></input>
                         <div class="inv-option-item" id="item-use"><p>Benutzen</p></div>
                         <!-- <img class="inv-option-hand" id= "item-use" src="images/hand-1.png"> -->
                         <div class="inv-option-item" id="item-give"><p>Geben</p></div>
+<<<<<<< Updated upstream
                         <div class="inv-option-item" id="inv-close"><p>Schliessen</p></div>
                         <div class="combine-option-container">
                             <div class="btn-combine CombineItem"><p>Kombinieren</p></div>
                             <div class="btn-combine SwitchItem"><p>Wechseln</p></div>
+=======
+                        <div class="inv-option-item" id="inv-close"><p>Schließen</p></div>
+                        <div class="combine-option-container">
+                            <div class="btn-combine CombineItem"><p>Kombinieren</p></div>
+                            <div class="btn-combine SwitchItem"><p>wechseln</p></div>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
@@ -99,8 +110,8 @@
                                 <q-checkbox dark v-on:click="select($event)" v-model="showblur" color="checkbox"></q-checkbox>
                             </q-item-section>
                             <q-item-section>
-                                <q-item-label class="text-check">Show Background Blur</q-item-label>
-                                <q-item-label caption>Disabling this will remove the background blur effect while inside your inventory.</q-item-label>
+                              <q-item-label class="text-check">Hintergrundunschärfe anzeigen</q-item-label>
+                              <q-item-label caption>Wenn Sie diese Funktion deaktivieren, wird der Effekt der Hintergrundunschärfe in Ihrem Inventar entfernt.</q-item-label>
                             </q-item-section>
                             </q-item>
                         </div>
@@ -119,22 +130,22 @@
                       </q-card-section>
               
                       <q-card-section class="q-pt-none">
-                        To move a full stack make sure the <b>AMOUNT FIELD</b> is empty. You can type the specific <b>NUMBER AMOUNT</b> for how much you would like to move. To <b>USE</b> an item, drag it into the middle option titled "USE" or you can <b>DOUBLE CLICK</b>. The <b>AMOUNT FIELD</b> will NOT reset when you close your inventory, so make sure you get in the habit of clearing the number!
+                        Setzen Sie die <b>Menge</b> fest wie viel du Kaufen willst <b>Menge</b> und ziehen Sie dann den Shop-Artikel in Ihr Inventar
                       </q-card-section>
 
                       <q-card-section>
-                        <div class="text-h6">Middle Options:</div>
+                        <div class="text-h6">Optionen:</div>
                       </q-card-section>
 
                       <q-card-section class="q-pt-none">
                         <ul>
-                            <li>Use: Drag item to this button to use that item</li>
-                            <li>Give: Give item to other citizens around you</li>
-                            <li>Combine: Combine certain items together</li>
-                            <li>Switch: Switch current item</li>
-                            <li>Attachments: When you have items you can attach to your weapons</li>
-                            <li>Close: Another way to close the inventory</li>
-                        </ul>
+                          <li>Benutzen: Ziehen Sie das Element auf diese Schaltfläche, um es zu verwenden.</li>
+                          <li>Geben: Geben Sie Gegenstände an andere Bürger in Ihrer Umgebung</li>
+                          <li>Kombinieren: Kombinieren Sie bestimmte Artikel miteinander</li>
+                          <li>Wechseln: Aktuelles Element wechseln</li>
+                          <li>Erweiterung: Wenn du Gegenstände hast, die du an deinen Waffen befestigen kannst</li>
+                          <li>Schließen: Eine weitere Möglichkeit, das Inventar zu schließen</li>
+                      </ul>
                       </q-card-section>
 
                       <q-card-section>
@@ -143,12 +154,12 @@
 
                       <q-card-section class="q-pt-none">
                         <ul>
-                            <li>Left Click: Normal drag</li>
-                            <li>Right Click: Drop item or move single item storage</li>
-                            <li>Double Click: Use Item</li>
-                            <li>Number 0-9: Will input the typed number</li>
-                            <li>BACKSPACE Key: Will set <b>AMOUNT</b> to blank/move entire item stack</li>
-                        </ul>
+                          <li>Links klicken: Normales Ziehen</li>
+                          <li>Rechtsklick: Element ablegen oder einzelnes Element verschieben</li>
+                          <li>Doppelklick: Gegenstand verwenden</li>
+                          <li>Zahl 0-9: Eingabe der eingegebenen Zahl</li>
+                          <li>BACKSPACE-Taste: Wird gesetzt <b>Menge</b> zum Löschen/Verschieben des gesamten Artikelstapels</li>
+                      </ul>
                       </q-card-section>
 
                       <q-card-section>
@@ -176,7 +187,7 @@
 
             <div class="weapon-attachments-remove"><i class="fas fa-trash"></i></div>
 
-            <div class="weapon-attachments-back"><p>RETURN</p></div>
+            <div class="weapon-attachments-back"><p>Zurück</p></div>
         </div>
         <div class="itemboxes-container"></div>
         <div class="itembox-container template"></div>
