@@ -636,8 +636,13 @@ RegisterCommand('inventory', function()
                 local maxweight = 0
                 local slots = 0
                 local vehicle = Config.Vehicles[vehicleClass]
-                maxweight = vehicle["maxweight"]
-                slots = vehicle["slots"]
+                if vehicle ~= nil then
+                    maxweight = vehicle["maxweight"]
+                    slots = vehicle["slots"]
+                else
+                    maxweight = 45000
+                    slots = 15
+                end
                 local other = {
                     maxweight = maxweight,
                     slots = slots,

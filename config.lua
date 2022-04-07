@@ -92,28 +92,31 @@ Config.MaximumAmmoValues = {
 }
 
 Config.Vehicles = {
-    --LKW So kannst man Kommentare setzen......
+    [GetHashKey('felon')] = { ["maxweight"] = 1000, ["slots"] = 30, },
+    [GetHashKey('mule2')] = { ["maxweight"] = 200000, ["slots"] = 100, },
     
-    [83136452] = {     	 ["maxweight"] = 55000,      ["slots"] = 20, }, 	--Rebla
-    [3244501995] = {  	 ["maxweight"] = 200000,     ["slots"] = 100, },	--Mule2
-    [1426711170] = {   	 ["maxweight"] = 140000,     ["slots"] = 40, }, 	--Speedoexpress
-	[972671128] = {      ["maxweight"] = 35000,      ["slots"] = 20, },		--Tampa
-	[2436313176] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--ZR350
-	[3101054893] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Calico	
-	[2712905841] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Jester4
-	[3842363289] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--RT3000
-	[2568944644] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Comet6
-	[2175389151] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Faction
-	[2933279331] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Chino2
-	[3612755468] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Buccaneer
-	[872704284] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Sultan2
-	[1377217886] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Remus
-	[2370166601] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Impaler
-	[1742022738] = {   	 ["maxweight"] = 45000,      ["slots"] = 20, }, 	--Slamvan
-	[2196012677] = {   	 ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Club
-	[2016857647] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Futo
-	[1104234922] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Sentinel3
-	[310284501] = {   	 ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Dynasty
-	[1645267888] = {   	 ["maxweight"] = 60000,      ["slots"] = 20, }, 	--RancherXL	
+    -- --LKW So kannst man Kommentare setzen......
+    
+    -- [83136452] = {     	 ["maxweight"] = 55000,      ["slots"] = 20, }, 	--Rebla
+    -- [3244501995] = {  	 ["maxweight"] = 200000,     ["slots"] = 100, },	--Mule2
+    -- [1426711170] = {   	 ["maxweight"] = 140000,     ["slots"] = 40, }, 	--Speedoexpress
+	-- [972671128] = {      ["maxweight"] = 35000,      ["slots"] = 20, },		--Tampa
+	-- [2436313176] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--ZR350
+	-- [3101054893] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Calico	
+	-- [2712905841] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Jester4
+	-- [3842363289] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--RT3000
+	-- [2568944644] = {     ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Comet6
+	-- [2175389151] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Faction
+	-- [2933279331] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Chino2
+	-- [3612755468] = {     ["maxweight"] = 35000,      ["slots"] = 20, }, 	--Buccaneer
+	-- [872704284] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Sultan2
+	-- [1377217886] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Remus
+	-- [2370166601] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Impaler
+	-- [1742022738] = {   	 ["maxweight"] = 45000,      ["slots"] = 20, }, 	--Slamvan
+	-- [2196012677] = {   	 ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Club
+	-- [2016857647] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Futo
+	-- [1104234922] = {   	 ["maxweight"] = 30000,      ["slots"] = 20, }, 	--Sentinel3
+	-- [310284501] = {   	 ["maxweight"] = 25000,      ["slots"] = 20, }, 	--Dynasty
+	-- [1645267888] = {   	 ["maxweight"] = 60000,      ["slots"] = 20, }, 	--RancherXL	
 	
 }
