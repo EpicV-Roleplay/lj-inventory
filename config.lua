@@ -94,7 +94,7 @@ Config.MaximumAmmoValues = {
 Config.Vehicles = {
     [GetHashKey('felon')] = { ["maxweight"] = 1000, ["slots"] = 30, },
     [GetHashKey('mule2')] = { ["maxweight"] = 200000, ["slots"] = 100, },
-    [GetHashKey('bison')] = { ["maxweight"] = 120, ["slots"] = 60, },
+    [GetHashKey('bison')] = { ["maxweight"] = 120000, ["slots"] = 60, },
     
     -- --LKW So kannst man Kommentare setzen......
     
