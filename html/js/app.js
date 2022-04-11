@@ -509,6 +509,11 @@ function FormatItemInfo(itemData, dom) {
                 "<p>" + itemData.info.vehplate + "</p>" +
 				"<p>" + itemData.info.veh + "</p>"
             );
+        } else if (itemData.name == "redwoodcigs") { // Cigarette Pack
+            $(".item-info-title").html("<p>" + itemData.label + "</p>");
+            $(".item-info-description").html(
+                "<p>" + itemData.info.uses + " cigarettes left.</p>"
+            );
         } else if (itemData.type == "weapon") {
             $(".item-info-title").html("<p>" + itemData.label + "</p>");
             if (itemData.info.ammo == undefined) {
@@ -599,6 +604,7 @@ function FormatItemInfo(itemData, dom) {
                     itemData.description +
                     "</p>"
                 );
+                
             }
         } else if (
             itemData.info.costs != undefined &&

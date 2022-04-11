@@ -1532,6 +1532,8 @@ QBCore.Commands.Add("giveitem", "Give An Item (Admin Only)", {{name="id", help="
 					info.serie = tostring(QBCore.Shared.RandomInt(2) .. QBCore.Shared.RandomStr(3) .. QBCore.Shared.RandomInt(1) .. QBCore.Shared.RandomStr(2) .. QBCore.Shared.RandomInt(3) .. QBCore.Shared.RandomStr(4))
 				elseif itemData["name"] == "harness" then
 					info.uses = 20
+				elseif itemData["name"] == "redwoodcigs" then
+					info.uses = 20
 				elseif itemData["name"] == "markedbills" then
 					info.worth = math.random(5000, 10000)
 				elseif itemData["name"] == "labkey" then
